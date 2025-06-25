@@ -1,0 +1,401 @@
+# UI Colors
+colors:
+  background: "#32327C"
+  foreground: "#FFFFFF"
+  sidebar_background: "#ADD8E6"
+  sidebar_foreground: "#000000"
+  content_background: "#1A1A1A"
+  button_foreground: "#FFFFFF"  
+  terminal_foreground: "#0CED0C"
+  dh_menu_bar: "#6A6AA6"
+  dh_button_background: "#6A6AA6"
+  dh_button_hover_background: "#7D7DC9"
+  panel_button_background: "#6A6AA6"
+  panel_button_hover_background: "#6666AA"
+    
+# Window settings
+window:
+  width: 1200
+  height: 800
+  title: "Xai/EXFO Job Creation Tool"
+
+# Font settings
+font:
+  size: 12
+  type: "Arial"
+
+# GUI Specific Settings
+gui:
+  data_halls: 18  
+  dh_button_style: "DH.TButton"
+  dh_button_padding: 6
+  frame_padding: 10
+  dh_button_spacing: 2
+  content_padding: 5
+  panel_buttons:
+    width: 10
+    height: 1
+    style: "Panel.TButton"
+
+# Ttk Styles for widgets
+ttk_styles:
+  button:
+    padding: 6
+    relief: "flat"
+  label:
+    font_size_increase: 2
+
+# Categories of actions or panels available in the application
+categories:
+  Download Jobs From EXFO Tester:
+    Download:
+      command: "echo 'Download jobs from tester'"
+  Add Jobs To EXFO Tester:
+    DH:
+      command: "open_DH_panel"
+    AS-T1:
+      command: "open_AS-T1_panel"
+    GPU-T1:
+      action: "open_GPU-T1_panel"
+    RT1-RT2:
+      action: "open_RT1-RT2_panel"
+    RT2-RT3:
+      command: "open_RT2-RT3_panel"
+    SIST1-T2:
+      command: "open_SIST1-T2_panel"
+
+# Mapping of SU numbers to shorthand codes
+su_to_code:
+  SU1: ""
+  SU2: ""
+  SU3: ""
+  SU4: ""
+  SU5: ""
+  SU6: ""
+  SU7: ""
+  SU8: ""
+  SU9: ""
+  SU10: ""
+  SU11: ""
+  SU12: ""
+  SU13: ""
+  SU14: ""
+  SU15: ""
+  SU16: ""
+  SU17: ""
+  SU18: ""
+  SU19: ""
+  SU20: ""
+  SU21: ""
+  SU22: ""
+  SU23: ""
+  SU24: ""
+  SU25: ""
+  SU26: ""
+  SU27: ""
+  SU28: ""
+  SU29: ""
+  SU30: ""
+  SU31: ""
+  SU32: ""
+  SU33: ""
+  SU34: ""
+  SU35: ""
+  SU36: ""
+  SU37: ""
+  SU38: ""
+  SU39: ""
+  SU40: ""
+  SU41: ""
+  SU42: ""
+  SU43: ""
+  SU44: ""
+  SU45: ""
+  SU46: ""
+  SU47: ""
+  SU48: ""
+
+# Configuration for AS-T1 panel
+as_t1:
+  nb_options:
+    - NB01
+    - NB06
+    - NB11
+    - NB16
+  nb_to_dirs:
+    NB01:
+      - "D01 B21"
+      - "D01 B22"
+      - "D01 B23"
+      - "D05 B21"
+      - "D05 B22"
+      - "D05 B23"
+      - "D09 B21"
+      - "D09 B22"
+      - "D09 B23"
+      - "D13 B21"
+      - "D13 B22"
+      - "D13 B23"
+    NB06:
+      - "D02 B21"
+      - "D02 B22"
+      - "D02 B23"
+      - "D06 B21"
+      - "D06 B22"
+      - "D06 B23"
+      - "D10 B21"
+      - "D10 B22"
+      - "D10 B23"
+      - "D14 B21"
+      - "D14 B22"
+      - "D14 B23"
+    NB11:
+      - "D03 B21"
+      - "D03 B22"
+      - "D03 B23"
+      - "D07 B21"
+      - "D07 B22"
+      - "D07 B23"
+      - "D11 B21"
+      - "D11 B22"
+      - "D11 B23"
+      - "D15 B21"
+      - "D15 B22"
+      - "D15 B23"
+    NB16:
+      - "D04 B21"
+      - "D04 B22"
+      - "D04 B23"
+      - "D08 B21"
+      - "D08 B22"
+      - "D08 B23"
+      - "D12 B21"
+      - "D12 B22"
+      - "D12 B23"
+      - "D16 B21"
+      - "D16 B22"
+      - "D16 B23"
+
+# Configuration for SIST1-T2 panel
+sist1_t2:
+  nc_options:
+    - NC01
+    - NC02
+    - NC03
+    - NC04
+  nc_to_dirs:
+    NC01:
+      - "D01 B1"
+      - "D01 B2"
+      - "D01 B3"
+      - "D01 B4"
+      - "D01 B5"
+      - "D01 B6"
+      - "D01 B7"
+      - "D08 B1"
+      - "D08 B2"
+      - "D08 B3"
+      - "D08 B4"
+      - "D08 B5"
+      - "D08 B6"
+      - "D08 B7"
+      - "D03 B1"
+      - "D03 B2"
+      - "D03 B3"
+      - "D03 B4"
+      - "D03 B5"
+      - "D03 B6"
+      - "D03 B7"
+      - "D10 B1"
+      - "D10 B2"
+      - "D10 B3"
+      - "D10 B4"
+      - "D10 B5"
+      - "D10 B6"
+      - "D10 B7"
+      - "D05 B1"
+      - "D05 B2"
+      - "D05 B3"
+      - "D05 B4"
+      - "D05 B5"
+      - "D05 B6"
+      - "D05 B7"
+      - "D12 B1"
+      - "D12 B2"
+      - "D12 B3"
+      - "D12 B4"
+      - "D12 B5"
+      - "D12 B6"
+      - "D12 B7"
+      - "D07 B1"
+      - "D07 B2"
+      - "D07 B3"
+      - "D07 B4"
+      - "D07 B5"
+      - "D07 B6"
+      - "D07 B7"
+      - "D14 B1"
+      - "D14 B2"
+      - "D14 B3"
+      - "D14 B4"
+      - "D14 B5"
+      - "D14 B6"
+      - "D14 B7"
+    NC02:
+      - "D02 B1"
+      - "D02 B2"
+      - "D02 B3"
+      - "D02 B4"
+      - "D02 B5"
+      - "D02 B6"
+      - "D02 B7"
+      - "D09 B1"
+      - "D09 B2"
+      - "D09 B3"
+      - "D09 B4"
+      - "D09 B5"
+      - "D09 B6"
+      - "D09 B7"
+      - "D04 B1"
+      - "D04 B2"
+      - "D04 B3"
+      - "D04 B4"
+      - "D04 B5"
+      - "D04 B6"
+      - "D04 B7"
+      - "D11 B1"
+      - "D11 B2"
+      - "D11 B3"
+      - "D11 B4"
+      - "D11 B5"
+      - "D11 B6"
+      - "D11 B7"
+      - "D06 B1"
+      - "D06 B2"
+      - "D06 B3"
+      - "D06 B4"
+      - "D06 B5"
+      - "D06 B6"
+      - "D06 B7"
+      - "D13 B1"
+      - "D13 B2"
+      - "D13 B3"
+      - "D13 B4"
+      - "D13 B5"
+      - "D13 B6"
+      - "D13 B7"
+
+# Configuration for Service Unit (SU) panels
+SU_panel:
+  button_count: 48
+  prefix: "SU"
+  rail_count: 9
+  rail_prefix: "RAIL"
+
+# Configuration for Router Terminal (RT) panels
+RT_panel:
+  button_count: 8
+  prefix: "RAIL"
+  su_count: 48
+
+# Configuration for RT2-RT3 panel
+RT2_RT3_panel:
+  na_options:
+    - NA02
+    - NA03
+    - NA04
+    - NA05
+    - NA07
+    - NA08
+    - NA09
+    - NA10
+    - NA12
+    - NA13
+    - NA14
+    - NA15
+    - NA17
+    - NA18
+    - NA19
+    - NA20
+  na_to_dirs:
+    NA02: [02, 03, 04, 05]
+    NA03: [07, 08, 09, 10]
+    NA04: [12, 13, 14, 15]
+    NA05: [17, 18, 19, 20]
+  dir_ranges:
+    - start: 1
+      end: 8
+    - start: 9
+      end: 16
+    - start: 17
+      end: 24
+    - start: 25
+      end: 32
+
+# USB configuration for job storage
+usb:
+  jobs_folder: "Jobs"
+
+# Constants used for naming conventions across panels
+constants:
+  as_t1_min_suffix: "00s0"
+  as_t1_max_suffix: "31s1"
+  gpu_t1_min_suffix: "01s0"
+  gpu_t1_max_suffix: "32s1"
+  rt1_rt2_min_suffix: "33s0"
+  rt1_rt2_max_suffix: "64s1"
+  rt2_rt3_min_suffix: "01s0"
+  rt2_rt3_max_suffix: "16s1"
+  sist1_t2_min_suffix: "32s0"
+  sist1_t2_max_suffix: "63s1"
+  
+  # Mapping of SU numbers to shorthand codes DH6 Tulane
+su_to_code_dh6:
+  SU1: ""
+  SU2: ""
+  SU3: ""
+  SU4: ""
+  SU5: ""
+  SU6: ""
+  SU7: ""
+  SU8: ""
+  SU9: ""
+  SU10: ""
+  SU11: ""
+  SU12: ""
+  SU13: ""
+  SU14: ""
+  SU15: ""
+  SU16: ""
+  SU17: ""
+  SU18: ""
+  SU19: ""
+  SU20: ""
+  SU21: ""
+  SU22: ""
+  SU23: ""
+  SU24: ""
+  SU25: ""
+  SU26: ""
+  SU27: ""
+  SU28: ""
+  SU29: ""
+  SU30: ""
+  SU31: ""
+  SU32: ""
+  SU33: ""
+  SU34: ""
+  SU35: ""
+  SU36: ""
+  SU37: ""
+  SU38: ""
+  SU39: ""
+  SU40: ""
+  SU41: ""
+  SU42: ""
+  SU43: ""
+  SU44: ""
+  SU45: ""
+  SU46: ""
+  SU47: ""
+  SU48: ""
