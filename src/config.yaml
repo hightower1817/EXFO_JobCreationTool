@@ -5,14 +5,14 @@ colors:
   sidebar_background: "#ADD8E6"
   sidebar_foreground: "#000000"
   content_background: "#1A1A1A"
-  button_foreground: "#FFFFFF"  
+  button_foreground: "#FFFFFF"
   terminal_foreground: "#0CED0C"
   dh_menu_bar: "#6A6AA6"
   dh_button_background: "#6A6AA6"
   dh_button_hover_background: "#7D7DC9"
   panel_button_background: "#6A6AA6"
   panel_button_hover_background: "#6666AA"
-    
+
 # Window settings
 window:
   width: 1200
@@ -26,7 +26,47 @@ font:
 
 # GUI Specific Settings
 gui:
-  data_halls: 18  
+  data_halls:
+    - name: DH1
+      code: DH1
+    - name: DH2
+      code: DH2
+    - name: DH3
+      code: DH3
+    - name: DH4
+      code: DH4
+    - name: DH5
+      code: DH5
+    - name: DH6
+      code: DH6
+    - name: DH7
+      code: DH7
+    - name: DH8
+      code: DH8
+    - name: DH9
+      code: DH9
+    - name: DH10
+      code: DH10
+    - name: DH11
+      code: DH11
+    - name: DH12
+      code: DH12
+    - name: DH13
+      code: DH13
+    - name: DH14
+      code: DH14
+    - name: DH15
+      code: DH15
+    - name: DH16
+      code: DH16
+    - name: DH17
+      code: DH17
+    - name: DH18
+      code: DH18
+    - name: Super Core A
+      code: SCA
+    - name: Super Core B
+      code: SCB
   dh_button_style: "DH.TButton"
   dh_button_padding: 6
   frame_padding: 10
@@ -348,8 +388,8 @@ constants:
   rt2_rt3_max_suffix: "16s1"
   sist1_t2_min_suffix: "32s0"
   sist1_t2_max_suffix: "63s1"
-  
-  # Mapping of SU numbers to shorthand codes DH6 Tulane
+
+# Mapping of SU numbers to shorthand codes DH6 Tulane
 su_to_code_dh6:
   SU1: ""
   SU2: ""

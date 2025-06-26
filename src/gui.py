@@ -58,10 +58,11 @@ def setup_gui(root, config):
     dh_var = tk.StringVar(top_nav)
     dh_var.set("DATA HALLS")  # Default to empty string
     
-    dh_options = ["DATA HALLS"] + [f"DH{i}" for i in range(1, config['gui']['data_halls'] + 1)]
+    # Updated: Use data_halls list from config
+    dh_options = ["DATA HALLS"] + [dh['name'] for dh in config['gui']['data_halls']]
     
     dh_dropdown = ttk.OptionMenu(top_nav, dh_var, *dh_options, 
-                                 command=lambda x: select_data_hall(int(x[2:]) if x else None, main_frame, config))
+                                 command=lambda x: select_data_hall(x if x != "DATA HALLS" else None, main_frame, config))
     # Center the dropdown menu
     dh_dropdown.pack(anchor='center', expand=True)
     
